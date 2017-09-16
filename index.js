@@ -21,3 +21,12 @@ app.delete('/api/posts/:id', apiRoutes.deletePost)
 app.listen(port, () => {
     console.log(`[Express App] The app is listening on port: ${port}`)
 })
+
+app.on('error', (err) => handleError)
+app.on('uncaughtException', (err) => handleError)
+app.on('unhandledRejection', (err) => handleError)
+
+function handleError(err) {
+    console.error(`[Error] ${err.message}`)
+    console.error(err.stack)
+}

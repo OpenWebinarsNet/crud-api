@@ -5,7 +5,7 @@ const PostSchema = new mongoose.Schema({
     contents: Array,
     image: String,
     releaseDate: Date,
-    special: boolean
+    special: Boolean
 })
 
 module.exports = mongoose.model('Post', PostSchema)

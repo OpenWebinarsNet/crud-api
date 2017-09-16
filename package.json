@@ -1,0 +1,15 @@
+{
+  "name": "OpenWebinars-CRUD",
+  "version": "1.0.0",
+  "description": "Simple CRUD for OpenWebinars",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/OpenWebinarsNet/CRUD",
+    "type": "git"
+  },
+  "author": "Miguh Ruiz <m@miguhruiz.xyz> (https://miguhruiz.xyz/)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}

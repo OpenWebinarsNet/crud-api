@@ -1,8 +1,12 @@
 const express = require('express')
 const apiRoutes = require('./routes/api')
+const mongoose = require('mongoose')
 
 const app = express()
 const port = process.env.PORT || '3000'
+const mongoUri = process.env.MONGO_URI || 'mongodb://localhost:27017/openwebinars'
+
+mongoose.connect(mongoUri)
 
 app.get('/', (req, res) => {
     res.send('Hello World')

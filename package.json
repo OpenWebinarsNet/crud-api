@@ -4,8 +4,11 @@
   "description": "Simple CRUD for OpenWebinars",
   "main": "index.js",
   "repository": {
-    "url": "https://github.com/OpenWebinarsNet/CRUD",
+    "url": "https://github.com/OpenWebinarsNet/crud-api",
     "type": "git"
+  },
+  "scripts": {
+    "start": "node index.js"
   },
   "author": "Miguh Ruiz <m@miguhruiz.xyz> (https://miguhruiz.xyz/)",
   "license": "MIT",
